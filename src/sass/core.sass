@@ -1,0 +1,46 @@
+html,*,body
+    box-sizing: border-box
+    font-family: inner
+    scrollbar-width: none
+    user-select: none
+    padding: 0
+    margin: 0
+.input
+    width: clamp(150px,20vw,300px)
+    height: 30px
+    background: #D8D8D8
+    border: none
+    border-radius: 100px
+    transition: 0.2s
+.input::placeholder
+    padding-left: 15px
+    font-size: clamp(20px,1vw,30px)
+
+.input:focus
+    outline: none
+    background: $white
+    border: 1px black solid
+    
+
+  
+    
+    
+.header__input
+    position: relative    
+.header__input::after
+    position: absolute
+    top: 1px
+    right: -40px
+    content: ""
+    background: url(../icons/loop.svg)center/contain no-repeat
+    width: 25px
+    aspect-ratio: 1
+    cursor: pointer
+
+.title
+    font-size: 56px
+    text-align: center
+
+b
+    font-weight: 700
+

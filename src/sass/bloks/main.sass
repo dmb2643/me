@@ -1,0 +1,100 @@
+.main
+    display: flex
+    background: #000
+    color: #FFFFFF
+    &__content
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 100%
+        padding-top: 20vh
+        overflow: hidden
+        &-top
+            display: flex
+            flex-direction: column
+            gap: 2em
+            align-items: center
+    &__left-wrapper
+        width: 70%
+    &__img
+        width: 100%
+        height: 100%
+    &__figure
+        position: absolute
+        aspect-ratio: 1
+        width: clamp(186px,14.80vw,300px)
+        top: 50%
+        right: -5vw
+
+
+    &__footer
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-top: 1px solid white
+        min-height: 6.51vh
+        width: 100%
+        padding: 0px 50px 0px 14vw
+        &-text
+            font-size: clamp(25px,1.50vw,40px)
+
+
+.icon-box
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    gap: 20px
+    &__item
+        height: 90px
+        aspect-ratio: 1
+        &-img
+            width: 100%
+            height: 100%
+
+.footer__icon-box 
+    gap: 5px
+
+.footer__icon-item-img
+    aspect-ratio: 1
+    width: clamp(35px,2.20vw,50px)
+
+@media (max-width: 1280px)
+    .title
+        font-size: 36px
+
+    .icon-box__item
+        height: 70px
+        width: 70px
+
+    .main__content 
+        padding-top: 10vw
+        &-top
+            gap: 1em
+        
+
+
+
+
+@media (max-width: 1024px)
+    .title
+        font-size: 30px
+    
+    .icon-box__item
+        width: 3em
+        height: 3em
+   
+    .main
+        &__figure
+            width: clamp(100px, 14.8vw, 300px)
+        &__footer
+            justify-content: space-evenly
+            padding: 0
+
+
+    
+@media (max-width: 767px)
+
+        
+        
+@media (max-width: 520px)
+  
