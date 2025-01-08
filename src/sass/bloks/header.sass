@@ -40,28 +40,39 @@
     
 @media (max-width: 767px)
     .header
-        padding-inline: 100px
+        flex-wrap: wrap
+        padding-inline: 10px
         &__list
-            display: none
+            // display: none
+            order: 1
+            flex-basis: 100%
+        &__logo
+            top: 7px
+        &__input
+            top: 11px
+            right: -12%
+            // right: -7%
 
-    .hamburger
-        position: relative
-        right: -11%
-        span
-            display: block
-            background: #000
-            width: 25px
-            height: 1px
-            margin-bottom: 5px
-            &:last-child
-                margin-bottom: 0px
+    // .hamburger
+    //     position: relative
+    //     right: -11%
+    //     span
+    //         display: block
+    //         background: #000
+    //         width: 25px
+    //         height: 1px
+    //         margin-bottom: 5px
+    //         &:last-child
+    //             margin-bottom: 0px
         
         
 @media (max-width: 520px)
-    .header__input
-        display: none
+    // .header__input
+    //     display: none
     
-    .hamburger
-        right: -60%
-        
+    // .hamburger
+    //     right: -60%
+    .header
+        &__input
+            right: -1vw
     

@@ -93,8 +93,77 @@
 
     
 @media (max-width: 767px)
+    .title
+        font-size: clamp(25px,7.51vw,56px)
+        opacity: 0.8
+        margin-bottom: 10px
+    .main
+        flex-direction: column
+        padding: 0
+        &__left-wrapper
+            width: 100%
+            position: absolute
+            height: 100vh
+            img
+                object-fit: cover
+        &__content
+            padding-top: 30vw
+            &-top
+                margin-bottom: 10px
+        &__figure
+            opacity: 0.7
+    .main__footer
+        // border-top: 1px rgba(0, 0, 0, .8) solid
+        border: 0
+        opacity: 0.8
+
+         
+
+
+    
+    .icon-box
+        &__item
+            width: clamp(25px,9.12vw,70px)
+            height: clamp(25px,9.12vw,70px)
+            opacity: 0.8
+    
+   
+       
+    
+  
+    // .title
+    //     font-size: 25px
+        
+
+    // .main__footer-text
+    //     font-size: clamp(16px,3vw,20px)
+
+    // .footer__icon-item-img 
+    //     width: clamp(15px, 5.2vw, 30px)
+
+    // .footer__icon-item
+    //    width: clamp(15px, 5.2vw, 30px)
 
         
-        
 @media (max-width: 520px)
+    .title
+        font-size: 25px
+        
+    .main
+        &__figure
+            display: none
+        &__content
+            padding-top: 62vw
+
+    .main__footer
+           flex-direction: column
+           
+           row-gap: 10px
+        
+    .icon-box
+        &__item
+            width: 35px
+            height: 35px
+            
+
   
